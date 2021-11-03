@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: verify
+    image: adoptopenjdk/maven-openjdk11
+    commands:
+      - cd myPracticeCourseWork/Command
+      - mvn --batch-mode --update-snapshots verify
