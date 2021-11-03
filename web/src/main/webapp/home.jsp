@@ -11,7 +11,7 @@
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
 <main role="main" class="container">
-    <H1>Home</H1>
+    <H1>Home page</H1>
 </main>
 
 
