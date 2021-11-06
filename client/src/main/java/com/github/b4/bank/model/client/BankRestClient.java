@@ -1,7 +1,9 @@
-package com.github.g4.bank.model.client;
+package com.github.b4.bank.model.client;
 
-import com.github.g4.bank.model.dto.CreditCard;
-import com.github.g4.bank.model.dto.TransactionReplyMessage;
+import com.github.b4.bank.model.dto.CreditCard;
+import com.github.b4.bank.model.dto.TransactionReplyMessage;
+import com.github.b4.bank.model.dto.CreditCard;
+import com.github.b4.bank.model.dto.TransactionReplyMessage;
 
 public interface BankRestClient {
 

@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     
 <parent>
-    <groupId>com.github.g4</groupId>
-    <artifactId>CreditCardAppG4</artifactId>
+    <groupId>com.github.b4</groupId>
+    <artifactId>CreditCardApp</artifactId>
     <version>1.0-SNAPSHOT</version>
 </parent>
 
-    <artifactId>bank-client</artifactId>
+    <artifactId>CreditCardApp-Bank-Client</artifactId>
 
     <packaging>jar</packaging>
     

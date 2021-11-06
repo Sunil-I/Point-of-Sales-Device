@@ -1,8 +1,8 @@
-package com.github.g4.bank.model.dto;
+package com.github.b4.bank.model.dto;
 
 import javax.persistence.Embeddable;
 import javax.persistence.Transient;
-import com.github.g4.password.PasswordUtils;
+import com.github.b4.password.PasswordUtils;
 
 @Embeddable
 public class User {

@@ -1,4 +1,4 @@
-package com.github.g4.bank.model.dto;
+package com.github.b4.bank.model.dto;
 
 import java.util.Date;
 import java.util.UUID;

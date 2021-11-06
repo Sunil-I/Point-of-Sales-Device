@@ -3,12 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.g4.bank.client.impl;
+package com.github.b4.bank.client.impl;
 
 import java.util.logging.Level;
-import com.github.g4.bank.model.client.BankRestClient;
-import com.github.g4.bank.model.dto.CreditCard;
-import javax.ws.rs.client.Client;
+import com.github.b4.bank.model.client.BankRestClient;
+import com.github.b4.bank.model.dto.CreditCard;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
@@ -23,8 +22,9 @@ import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JacksonJsonProvider;
 import org.glassfish.jersey.logging.LoggingFeature;
-import com.github.g4.bank.model.dto.TransactionReplyMessage;
-import com.github.g4.bank.model.dto.TransactionRequestMessage;
+import com.github.b4.bank.model.dto.TransactionReplyMessage;
+import com.github.b4.bank.model.dto.TransactionRequestMessage;
+import javax.ws.rs.client.Client;
 
 /**
  *

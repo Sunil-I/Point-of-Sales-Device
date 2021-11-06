@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.g4.password.test;
+package com.github.b4.password.test;
 
 
 import org.junit.Test;
@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 import org.mindrot.jbcrypt.BCrypt;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.github.g4.password.PasswordUtils;
+import com.github.b4.password.PasswordUtils;
 
 
 /**

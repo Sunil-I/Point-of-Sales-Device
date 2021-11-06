@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.g4.password;
+package com.github.b4.password;
 
 import org.mindrot.jbcrypt.BCrypt;
 

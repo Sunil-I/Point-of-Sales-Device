@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.g4.bank.model.dto.test;
+package com.github.b4.bank.model.dto.test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,8 +13,8 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
-import com.github.g4.bank.model.dto.CreditCard;
-import com.github.g4.bank.model.dto.TransactionRequestMessage;
+import com.github.b4.bank.model.dto.CreditCard;
+import com.github.b4.bank.model.dto.TransactionRequestMessage;
 
 /**
  *

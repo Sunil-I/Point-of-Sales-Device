@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.g4.bank.client.test.manual;
+package com.github.b4.bank.client.test.manual;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
-import com.github.g4.bank.client.impl.BankRestClientImpl;
-import com.github.g4.bank.model.client.BankRestClient;
-import com.github.g4.bank.model.dto.BankTransactionStatus;
-import com.github.g4.bank.model.dto.CreditCard;
-import com.github.g4.bank.model.dto.TransactionReplyMessage;
+import com.github.b4.bank.client.impl.BankRestClientImpl;
+import com.github.b4.bank.model.client.BankRestClient;
+import com.github.b4.bank.model.dto.BankTransactionStatus;
+import com.github.b4.bank.model.dto.CreditCard;
+import com.github.b4.bank.model.dto.TransactionReplyMessage;
 
 /**
  *
