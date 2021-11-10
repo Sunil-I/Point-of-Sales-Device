@@ -12,7 +12,6 @@
 <!-- Begin page content -->
 <main role="main" class="container">
     <H1>Home page</H1>
-<<<<<<< HEAD
     <form> 
     <label> Credit Card Number </label>
     <input type="number" id="ccnumber" name="Credit Card number"/>
@@ -27,11 +26,6 @@
     <input type="number" id="cvv" name="Cvv Code"/>
     
     </form>
-=======
-    
-    
- 
->>>>>>> 356a74a7c0538a43f79fa39c0acf7ee810994fae
 </main>
 
 
