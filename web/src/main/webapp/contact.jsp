@@ -11,7 +11,26 @@
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
 <main role="main" class="container">
-    <H1>Contact</H1>
+    <H1>Contact Form</H1>
+ 
+    <div id=form>
+    <form>
+        <br>
+        <label> First Name </label>
+        <input type="text" id="fname" name="firstname"></input>
+        <br>
+        <br>
+        <label> Email </label>
+        <input type="text" id="email" name="email"></input>
+        <br>
+        <br>
+        <label> Message </label>
+        <input type="text" id="message" name="message"></input>
+        <br>
+        <br>
+        <input type="submit" value="Submit"
+    </form>
+    </div>
 </main>
 
 
