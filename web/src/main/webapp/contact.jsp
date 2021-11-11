@@ -17,18 +17,18 @@
     <form>
         <br>
         <label> First Name </label>
-        <input type="text" id="fname" name="firstname"></input>
+        <input type="text" id="fname" name="firstname"/>
         <br>
         <br>
         <label> Email </label>
-        <input type="text" id="email" name="email"></input>
+        <input type="text" id="email" name="email"/>
         <br>
         <br>
         <label> Message </label>
-        <input type="text" id="message" name="message"></input>
+        <input type="text" id="message" name="message"/>
         <br>
         <br>
-        <input type="submit" value="Submit"
+        <input type="submit" value="Submit">
     </form>
     </div>
 </main>
