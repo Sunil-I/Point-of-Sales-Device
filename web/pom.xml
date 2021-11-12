@@ -28,7 +28,7 @@
     <dependencies>
         <dependency>
             <groupId>com.github.b4</groupId>
-            <artifactId>BankingApp-Client</artifactId>
+            <artifactId>BankingApp-client</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
