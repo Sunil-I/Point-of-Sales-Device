@@ -22,8 +22,8 @@
     </properties>
     
     <modules>
-        <module>Client</module>
-        <module>Web</module>
+        <module>client</module>
+        <module>web</module>
     </modules>
     
     <dependencies>
