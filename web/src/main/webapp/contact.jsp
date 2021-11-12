@@ -12,25 +12,31 @@
 <!-- Begin page content -->
 <main role="main" class="container">
     <H1>Contact Form</H1>
- 
-    <div id=form>
-    <form>
-        <br>
-        <label> First Name </label>
-        <input type="text" id="fname" name="firstname"/>
-        <br>
-        <br>
-        <label> Email </label>
-        <input type="text" id="email" name="email"/>
-        <br>
-        <br>
-        <label> Message </label>
-        <input type="text" id="message" name="message"/>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    </div>
+    <form class="form-card" method="POST" id="card-form">
+      <div class="form-group">
+         <table class="table">
+            <tbody>
+               <tr>
+                  <td>First name</td>
+                  <td><input type="text" size="16" name="firstname" value="" required></td>
+               </tr>
+               <tr>
+                  <td>Last Name</td>
+                  <td><input type="text" size="16" name="last name" value="" required></td>
+               </tr>
+               <tr>
+                  <td>Reason for contact</td>
+                  <td><input type="text" size="36" name="subject" value="" required></td>
+               </tr>
+               <tr>
+                  <td>Message</td>
+                  <td><textarea type="text" name="message" value="" class="form-group" style="margin: 0px 0px 15px; width: 299px; height: 57px;" required> </textarea></td>
+               </tr>
+            </tbody>
+         </table>
+         <button class="btn ml-2 rounded" type="submit">Send Email</button>
+   </div>
+   </form>
 </main>
 
 
