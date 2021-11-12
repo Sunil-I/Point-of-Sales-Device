@@ -7,7 +7,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     
-    <artifactId>web</artifactId>
+    <artifactId>BankingApp-web</artifactId>
     <packaging>war</packaging>
 
     <name>BankingApp-Web</name>

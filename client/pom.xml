@@ -9,7 +9,7 @@
     </parent>
     
     
-    <artifactId>client</artifactId>
+    <artifactId>BankingApp-client</artifactId>
     <packaging>jar</packaging>
         
     <name>BankingApp-Client</name>
