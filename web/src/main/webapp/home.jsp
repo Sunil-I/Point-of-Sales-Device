@@ -10,9 +10,17 @@
 <%@ page import="com.github.b4.bank.model.dto.BankTransactionStatus" %>
 <%@ page import="com.github.b4.bank.model.dto.TransactionReplyMessage" %>
 
+<%@page import="com.github.b4.dao.WebObjectFactory"%>
+<%@page import="com.github.b4.dao.PropertiesDao"%>
+
+
 <%
-    // bank url
-    String bankUrl = "http://com528bank.ukwest.cloudapp.azure.com:8080/rest/";
+
+    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
+    String bankUrl = propertiesDao.getProperty("rest_url");
+%>
+
+<%
     // start the clart
     BankRestClient client = new BankRestClientImpl(bankUrl);
     // define things

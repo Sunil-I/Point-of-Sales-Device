@@ -29,6 +29,7 @@
             <li <% if ("home".equals(request.getAttribute("selectedPage"))) {%> class="active"  <% } %> ><a href="./home.jsp">Home</a></li>
             <li <% if ("about".equals(request.getAttribute("selectedPage"))) {%>  class="active"  <% } %> ><a href="./about.jsp">About</a></li>
             <li <% if ("contact".equals(request.getAttribute("selectedPage"))) {%>  class="active"  <% }%> ><a href="./contact.jsp">Contact</a></li>
+            <li <% if ("contact".equals(request.getAttribute("selectedPage"))) {%>  class="active"  <% }%> ><a href="./contact.jsp">Contact</a></li>
          </ul>
       </nav>
    </header>
