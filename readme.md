@@ -34,15 +34,21 @@ This system requirements for this program are:
 
 # Objectives
 The main goal of this application is for a user to enter and perform a transaction. 
-it allows users to enter card details such as a card number, expiry date, CVV.
-moreover it also permits users to reverse a transaction as well as vlaidate the credit card
+It allows users to enter card details such as a card number, expiry date, CVV.
+Moreover it also permits users to reverse a transaction as well as vlaidate the credit card
 
 # Project Diagrams
 
 UML class diagram
 
-class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
+This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
 
 **insert diagram**
 
 Robustness diagram
+
+the Robusteness diagram shown below represnts a use case behaviour, showing participating
+classes and software behaviour.
+
+![image](https://user-images.githubusercontent.com/71653944/141869418-7ab1f139-c016-470c-8767-3757bbf069f8.png)
+
