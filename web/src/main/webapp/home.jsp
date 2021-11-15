@@ -9,6 +9,12 @@
 <%@ page import="com.github.b4.bank.model.dto.TransactionReplyMessage" %>
 <%@page import="com.github.b4.dao.WebObjectFactory"%>
 <%@page import="com.github.b4.dao.PropertiesDao"%>
+<%@ page import="org.apache.logging.log4j.Logger" %>
+<%@ page import="org.apache.logging.log4j.LogManager" %>
+        <% Logger log = LogManager.getLogger(this.getClass());
+           log.error("Show ERROR message");
+           %>
+
 <%
    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
    String bankUrl = propertiesDao.getProperty("rest_url");
@@ -55,8 +61,27 @@
        double amount = Double.parseDouble(request.getParameter("amount").toString());
        
        reply = client.transferMoney(cardFrom, cardTo, amount);
+    } else if ("refund".equals(action)) {
+           //Card From
+       cardFrom = new CreditCard();
+       cardFrom.setCardnumber(sender_ccnumber);
+       cardFrom.setCvv(sender_cvv);
+       cardFrom.setEndDate(sender_endDate);
+       cardFrom.setIssueNumber(sender_issueNum); 
+       cardFrom.setName(sender_name);
+       //Card To
+       cardTo = new CreditCard();
+       cardTo.setCardnumber(recipient_ccnumber);
+       cardTo.setCvv(recipient_cvv);
+       cardTo.setEndDate(recipient_endDate);
+       cardTo.setIssueNumber(recipient_issueNum);
+       cardTo.setName(recipient_name);
        
-   }
+       //Amount
+       double amount = Double.parseDouble(request.getParameter("amount").toString());
+       
+       reply = client.transferMoney(cardTo, cardFrom, amount);
+    }
    %>
 <jsp:include page="header.jsp" />
 <script src="./resources/js/home.js" defer></script>
@@ -64,9 +89,9 @@
    <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
          <div class="btn-group-vertical">
-            <input type="button" value="Enter a new transaction" onclick="document.getElementsByName('action')[0].value = 'transaction'"></input>
-            <input type="button" value="Reverse a transaction" onclick="document.getElementsByName('action')[0].value = 'refund'"></input>
-            <input type="button" value="Check Credit card Lunn code" onclick="document.getElementsByName('action')[0].value = 'lunn'"></input>
+            <input type="button" value="Send Money" onclick="document.getElementsByName('action')[0].value = 'transaction'"></input>
+            <input type="button" value="Refund Money" onclick="document.getElementsByName('action')[0].value = 'refund'"></input>
+            <input type="button" value="Check Credit card" onclick="document.getElementsByName('action')[0].value = 'lunn'"></input>
          </div>
          <br>
          <div id="sender">
@@ -75,31 +100,31 @@
                <tbody>
                   <tr>
                      <td>Full Name</td>
-                     <td><input type="text" size="36" name="sender_name" placeholder="Jeff Bezos" required></td>
+                     <td><input type="text" size="36" name="sender_name" value="Jeff Bezos" required></td>
                   </tr>
                   <tr>
                      <td>Credit Card Number</td>
-                     <td><input type="text" size="36" name="sender_ccnumber" placeholder="5133880000000012" required></td>
+                     <td><input type="text" size="36" name="sender_ccnumber" value="5133880000000012" required></td>
                      <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="sender_ccnumber">Select</button></td>
                   </tr>
                   <tr>
                      <td>Issue Number</td>
-                     <td><input type="text" size="36" name="sender_issueNum" placeholder="01" required></td>
+                     <td><input type="text" size="36" name="sender_issueNum" value="01" required></td>
                      <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="sender_issueNum">Select</button></td>
                   </tr>
                   <tr>
                      <td>Expiry Date</td>
-                     <td><input type="text" size="36" name="sender_endDate" placeholder="11/21" required></td>
+                     <td><input type="text" size="36" name="sender_endDate" value="11/21" required></td>
                      <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="sender_endDate">Select</button></td>
                   </tr>
                   <tr>
                      <td>Cvv Code</td>
-                     <td><input type="text" size="36" name="sender_cvv" placeholder="123" class="form-group col-md-2" required></td>
+                     <td><input type="text" size="36" name="sender_cvv" value="123" class="form-group col-md-2" required></td>
                      <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="sender_cvv">Select</button></td>
                   </tr>
                   <tr>
                      <td>Amount</td>
-                     <td><input type="text" size="36" name="amount" placeholder="&#163;10" class="form-group col-md-2" required></td>
+                     <td><input type="number" size="36" name="amount" value="10" class="form-group col-md-2" required></td>
                      <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="amount">Select</button></td>
                   </tr>
                </tbody>
@@ -165,6 +190,11 @@
       </div>
    </form>
    <% if (("transaction".equals(action))) {%>
+   <p>transaction sent</p><br>
+   <p><%=reply%> </p>
+   <% }%>
+      <% if (("refund".equals(action))) {%>
+   <p>refund sent</p><br>
    <p><%=reply%> </p>
    <% }%>
 </main>

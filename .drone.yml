@@ -3,7 +3,18 @@ type: docker
 name: default
 
 steps:
-  - name: verify
+  - name: web tests
     image: adoptopenjdk/maven-openjdk11
     commands:
-      - mvn --batch-mode --update-snapshots verify
+       - mvn test -Dtest=PropertiesDaoTest
+       - mvn test -Dtest=WebObjectFactoryTest
+  - name: client tests
+    image: adoptopenjdk/maven-openjdk11
+    commands:
+       - mvn test -Dtest=BankClientTest
+       - mvn test -Dtest=JsonDtoTests
+       - mvn test -Dtest=PasswordUtilsTest
+  - name: general tests
+    image: adoptopenjdk/maven-openjdk11
+    commands:
+       - mvn --batch-mode --update-snapshots -DskipTests=true verify
