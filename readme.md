@@ -23,5 +23,8 @@ mvn install
 # Project Diagrams
 
 UML class diagram
+class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
+
+**insert diagram
 
 Robustness diagram
