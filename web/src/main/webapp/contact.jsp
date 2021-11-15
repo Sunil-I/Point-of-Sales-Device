@@ -13,7 +13,7 @@
    %>
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
-<main role="main" class="container">
+<main class="container">
    <H1>Contact Form</H1>
    <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
