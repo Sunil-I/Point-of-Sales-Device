@@ -39,13 +39,13 @@ Moreover it also permits users to reverse a transaction as well as vlaidate the 
 
 # Project Diagrams
 
-UML class diagram
+__UML class diagram__
 
 This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
 
 **insert diagram**
 
-Robustness diagram
+__Robustness diagram__
 
 the Robusteness diagram shown below represnts a use case behaviour, showing participating
 classes and software behaviour.
