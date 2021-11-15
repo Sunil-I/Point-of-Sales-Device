@@ -19,3 +19,5 @@ mvn clean
 ```shell
 mvn install
 ```
+
+# Project Diagrams
