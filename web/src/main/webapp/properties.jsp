@@ -10,7 +10,7 @@
    String recipient_endDate = propertiesDao.getProperty("recipient_endDate");
    String recipient_cvv = propertiesDao.getProperty("recipient_cvv");
    String action = request.getParameter("action");
-  %>
+   %>
 <%
    request.setAttribute("selectedPage","properties");
    %>
@@ -41,7 +41,7 @@
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
 <main class="container">
-    <script src="./resources/js/numpad.js" defer></script>
+   <script src="./resources/js/numpad.js" defer></script>
    <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
          <table class="table">
@@ -68,7 +68,7 @@
                <td>Issue Number</td>
                <td><input type="text" size="36" name="recipient_issueNum" value="<%=recipient_issueNum%>" required></td>
                <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="recipient_issueNum">Select</button></td>
-         </tr> 
+               </tr> 
                <tr>
                   <td>Expiry Date</td>
                   <td><input type="text" size="36" name="recipient_endDate" value="<%=recipient_endDate%>" required></td>
@@ -81,7 +81,7 @@
                </tr>
             </tbody>
          </table>
-                           <div id="numpad" class="text-center">
+         <div id="numpad" class="text-center">
             <div class="btn-group btn-group-lg" role="group">
                <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName ('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '1';">1</button>
                <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '2';">2</button>

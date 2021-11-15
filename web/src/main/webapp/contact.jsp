@@ -1,22 +1,21 @@
 <%-- 
-    Document   : content
-    Created on : Jan 4, 2020, 11:19:47 AM
-    Author     : cgallen
---%>
-
+   Document   : content
+   Created on : Jan 4, 2020, 11:19:47 AM
+   Author     : cgallen
+   --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
-    request.setAttribute("selectedPage","contact");
-%>
+   request.setAttribute("selectedPage","contact");
+   %>
 <% 
-    String action = request.getParameter("action");
-    String reply = "Email from " + request.getParameter("firstname") + " " + request.getParameter("lastname") + " with the subject of " + request.getParameter("subject") + " and content of: " + request.getParameter("subject") + " was sent.";
-    %>
+   String action = request.getParameter("action");
+   String reply = "Email from " + request.getParameter("firstname") + " " + request.getParameter("lastname") + " with the subject of " + request.getParameter("subject") + " and content of: " + request.getParameter("subject") + " was sent.";
+   %>
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
 <main role="main" class="container">
-    <H1>Contact Form</H1>
-    <form class="form-card" method="POST" id="card-form">
+   <H1>Contact Form</H1>
+   <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
          <table class="table">
             <tbody>
@@ -38,14 +37,12 @@
                </tr>
             </tbody>
          </table>
-          <input name="action" type="hidden" value="email">
+         <input name="action" type="hidden" value="email">
          <button class="btn ml-2 rounded" type="submit">Send Email</button>
-   </div>
+      </div>
    </form>
-      <% if (("email".equals(action))) {%>
+   <% if (("email".equals(action))) {%>
    <p><%=reply%> </p>
    <% }%>
 </main>
-
-
 <jsp:include page="footer.jsp" />

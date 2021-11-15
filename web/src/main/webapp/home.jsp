@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
    request.setAttribute("selectedPage","home");
-%>
+   %>
 <%--import bank modules --%>
 <%@ page import="com.github.b4.bank.model.dto.CreditCard" %>
 <%@ page import="com.github.b4.bank.client.impl.BankRestClientImpl" %>
@@ -15,7 +15,6 @@
 <%@ page import="org.apache.logging.log4j.Logger" %>
 <%@ page import="org.apache.logging.log4j.LogManager" %>
 <% Logger log = LogManager.getLogger(this.getClass());%>
-
 <%
    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
    String bankUrl = propertiesDao.getProperty("rest_url");
@@ -191,11 +190,13 @@
       </div>
    </form>
    <% if (("transaction".equals(action))) {%>
-   <p>transaction sent</p><br>
+   <p>transaction sent</p>
+   <br>
    <p><%=reply%> </p>
    <% }%>
-      <% if (("refund".equals(action))) {%>
-   <p>refund sent</p><br>
+   <% if (("refund".equals(action))) {%>
+   <p>refund sent</p>
+   <br>
    <p><%=reply%> </p>
    <% }%>
 </main>
