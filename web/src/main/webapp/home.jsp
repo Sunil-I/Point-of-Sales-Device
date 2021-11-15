@@ -1,14 +1,17 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
    request.setAttribute("selectedPage","home");
-   %>
+%>
+<%--import bank modules --%>
 <%@ page import="com.github.b4.bank.model.dto.CreditCard" %>
 <%@ page import="com.github.b4.bank.client.impl.BankRestClientImpl" %>
 <%@ page import="com.github.b4.bank.model.client.BankRestClient" %>
 <%@ page import="com.github.b4.bank.model.dto.BankTransactionStatus" %>
 <%@ page import="com.github.b4.bank.model.dto.TransactionReplyMessage" %>
+<%--import properties modules --%>
 <%@page import="com.github.b4.dao.WebObjectFactory"%>
 <%@page import="com.github.b4.dao.PropertiesDao"%>
+<%--import logging modules --%>
 <%@ page import="org.apache.logging.log4j.Logger" %>
 <%@ page import="org.apache.logging.log4j.LogManager" %>
 <% Logger log = LogManager.getLogger(this.getClass());%>
