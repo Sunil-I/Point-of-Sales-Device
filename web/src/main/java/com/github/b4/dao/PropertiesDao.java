@@ -59,7 +59,7 @@ public class PropertiesDao {
             LOG.debug("saving properties to: " + propertiesFile.getAbsolutePath());
 
             output = new FileOutputStream(propertiesFile);
-            String comments = "# properties example file";
+            String comments = "# properties file";
             properties.store(output, comments);
 
         } catch (IOException ex) {

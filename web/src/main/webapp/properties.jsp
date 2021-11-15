@@ -40,7 +40,8 @@
    %>
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
-<main role="main" class="container">
+<main class="container">
+    <script src="./resources/js/numpad.js" defer></script>
    <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
          <table class="table">
@@ -62,20 +63,49 @@
                <tr>
                   <td>Credit Card Number</td>
                   <td><input type="text" size="36" name="recipient_ccnumber" value="<%=recipient_ccnumber%>" required></td>
+                  <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="recipient_ccnumber">Select</button></td>
                </tr>
                <td>Issue Number</td>
                <td><input type="text" size="36" name="recipient_issueNum" value="<%=recipient_issueNum%>" required></td>
-               </tr> 
+               <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="recipient_issueNum">Select</button></td>
+         </tr> 
                <tr>
                   <td>Expiry Date</td>
                   <td><input type="text" size="36" name="recipient_endDate" value="<%=recipient_endDate%>" required></td>
+                  <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="recipient_endDate">Select</button></td>
                </tr>
                <tr>
                   <td>Cvv Code</td>
                   <td><input type="text" size="36" name="recipient_cvv" value="<%=recipient_cvv%>" class="form-group col-md-2"></td>
+                  <td><button name="selectButtons" type="button" class="btn ml-2 rounded" value="recipient_cvv">Select</button></td>
                </tr>
             </tbody>
          </table>
+                           <div id="numpad" class="text-center">
+            <div class="btn-group btn-group-lg" role="group">
+               <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName ('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '1';">1</button>
+               <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '2';">2</button>
+               <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '3';">3</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-lg" role="group">
+               <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '4';">4</button>
+               <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '5';">5</button>
+               <button name="numpad" type="button" class="btn btn-secondary" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '6';">6</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-lg" role="group">
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '7';">7</button>
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '8';">8</button>
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '9';">9</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-lg" role="group">
+               <button name="numpad-back" type="button" class="btn btn-danger py-3" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value.slice(0, -1);">Back</button>
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value + '0';">0</button>
+               <button name="numpad-clear" type="button" class="btn btn-danger py-3" onclick="document.getElementsByName('recipient_ccnumber')[0].value = document.getElementsByName('recipient_ccnumber')[0].value = '';">Clear</button>
+            </div>
+         </div>
          <input type="hidden" name="action" value="update"> 
          <button class="btn ml-2 rounded" type="submit">Update Details</button>
       </div>
