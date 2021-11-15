@@ -11,9 +11,7 @@
 <%@page import="com.github.b4.dao.PropertiesDao"%>
 <%@ page import="org.apache.logging.log4j.Logger" %>
 <%@ page import="org.apache.logging.log4j.LogManager" %>
-        <% Logger log = LogManager.getLogger(this.getClass());
-           log.error("Show ERROR message");
-           %>
+<% Logger log = LogManager.getLogger(this.getClass());%>
 
 <%
    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
@@ -84,8 +82,8 @@
     }
    %>
 <jsp:include page="header.jsp" />
-<script src="./resources/js/home.js" defer></script>
-<main role="main" class="container">
+<script src="./resources/js/numpad.js" defer></script>
+<main class="container">
    <form class="form-card" method="POST" id="card-form">
       <div class="form-group">
          <div class="btn-group-vertical">

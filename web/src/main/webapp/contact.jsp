@@ -8,6 +8,10 @@
 <%
     request.setAttribute("selectedPage","contact");
 %>
+<% 
+    String action = request.getParameter("action");
+    String reply = "Email from " + request.getParameter("firstname") + " " + request.getParameter("lastname") + " with the subject of " + request.getParameter("subject") + " and content of: " + request.getParameter("subject") + " was sent.";
+    %>
 <jsp:include page="header.jsp" />
 <!-- Begin page content -->
 <main role="main" class="container">
@@ -34,9 +38,13 @@
                </tr>
             </tbody>
          </table>
+          <input name="action" type="hidden" value="email">
          <button class="btn ml-2 rounded" type="submit">Send Email</button>
    </div>
    </form>
+      <% if (("email".equals(action))) {%>
+   <p><%=reply%> </p>
+   <% }%>
 </main>
 
 
