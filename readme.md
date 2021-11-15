@@ -21,3 +21,7 @@ mvn install
 ```
 
 # Project Diagrams
+
+UML class diagram
+
+Robustness diagram
