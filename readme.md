@@ -32,6 +32,11 @@ This system requirements for this program are:
 - [Tomcat 9](https://tomcat.apache.org/download-90.cgi)
 - Web Browser: [Google Chrome](https://www.google.co.uk/chrome/) or [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
 
+# Objectives
+The main goal of this application is for a user to enter and perform a transaction. 
+it allows users to enter card details such as a card number, expiry date, CVV.
+moreover it also permits users to reverse a transaction as well as vlaidate the credit card
+
 # Project Diagrams
 
 UML class diagram
