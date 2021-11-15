@@ -81,6 +81,13 @@
        double amount = Double.parseDouble(request.getParameter("amount").toString());
        
        reply = client.transferMoney(cardTo, cardFrom, amount);
+    } else if ("lunn".equals(action)) {
+       cardFrom = new CreditCard();
+       cardFrom.setCardnumber(sender_ccnumber);
+       cardFrom.setCvv(sender_cvv);
+       cardFrom.setEndDate(sender_endDate);
+       cardFrom.setIssueNumber(sender_issueNum); 
+       cardFrom.setName(sender_name);
     }
    %>
 <jsp:include page="header.jsp" />
@@ -150,9 +157,15 @@
             </div>
             <br>
             <div class="btn-group btn-group-lg" role="group">
-               <button name="numpad-back" type="button" class="btn btn-danger py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value.slice(0, -1);">Back</button>
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value + '*';">*</button>
                <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value + '0';">0</button>
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value + '/';">/</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-lg" role="group">
                <button name="numpad-clear" type="button" class="btn btn-danger py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value = '';">Clear</button>
+               <button name="numpad" type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value + '#';">#</button>
+               <button name="numpad-back" type="button" class="btn btn-danger py-3" onclick="document.getElementsByName('sender_ccnumber')[0].value = document.getElementsByName('sender_ccnumber')[0].value.slice(0, -1);">Back</button>
             </div>
          </div>
          <br><br>
