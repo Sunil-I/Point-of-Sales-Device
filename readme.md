@@ -87,14 +87,14 @@ To start this project, all developers were split into different sections of the 
 
 # Project Diagrams ******
 
-##__UML class diagram__
+##UML class diagram
 
 This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
 
 ![image](https://user-images.githubusercontent.com/71653944/141876925-81a8b8b8-0303-42ce-8c7e-ad82dce45d4a.png)
 
 
-##__Robustness diagram__
+##Robustness diagram
 
 the Robusteness diagram shown below represnts a use case behaviour, showing participating
 classes and software behaviour. This diagram shows that a user will insert details in a card reader provided
