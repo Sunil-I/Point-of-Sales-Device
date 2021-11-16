@@ -18,6 +18,8 @@ The developers and contributors involved in this project were:
 4) [Features](https://github.com/Sunil-I/COM528-AE1-B4#features)
 
 5) [Use Cases](https://github.com/Sunil-I/COM528-AE1-B4#use-cases-)
+    - [User point of view](https://github.com/Sunil-I/COM528-AE1-B4/blob/master/readme.md#user-point-of-view)
+    - [Admin point of view](https://github.com/Sunil-I/COM528-AE1-B4/blob/master/readme.md#admin-point-of-view)
 
 6) [Contributions](https://github.com/Sunil-I/COM528-AE1-B4#contributions)
 
@@ -74,16 +76,29 @@ The application contains many basic aspects such as:
 - We also added a properties page
 
 # Use Cases ******
-There are many features to this web application therefore we 
+There are many cases in which a user or admin can use this application for example:
 
-# Contributions ******
+## User point of view
+
+| User | Action | Response|
+|------|--------|---------|
+| step 1 | User enteres application URL in search engine | redirects user to home page | 
+
+
+## Admin point of view
+
+|Admin | Action | Response|
+|------|--------|---------|
+
+
+# Contributions 
 To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as inteacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
 |-------------|--------------------|-------------|-----------------|
 | Github | UML Class Diagram  |Robustness Diagram|   Use Cases     |
-|Testing|--------------------| Html/css |Features defintion|
-|Refactoring Code|--------------------|-------------| Html/css|
+|Testing| Design Application| Html/css |Features defintion|
+|Refactoring Code|           |          | Html/css|
 
 
 # Testing *******
