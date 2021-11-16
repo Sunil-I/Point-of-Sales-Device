@@ -24,8 +24,8 @@ The developers and contributors involved in this project were:
 7) [Testing](https://github.com/Sunil-I/COM528-AE1-B4#testing-)
 
 8) [Project Digrams](https://github.com/Sunil-I/COM528-AE1-B4#project-diagrams-)
-    -[UML Class diagram](https://github.com/Sunil-I/COM528-AE1-B4#uml-class-diagram)
-    -[Robustness diagram](https://github.com/Sunil-I/COM528-AE1-B4#robustness-diagram)
+    - [UML Class diagram](https://github.com/Sunil-I/COM528-AE1-B4#uml-class-diagram)
+    - [Robustness diagram](https://github.com/Sunil-I/COM528-AE1-B4#robustness-diagram)
 
 
 
