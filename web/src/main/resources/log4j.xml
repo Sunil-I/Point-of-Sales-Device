@@ -28,10 +28,7 @@
         
     </Appenders>
     <Loggers>
-        
-        <!-- The name org.solent specifies that log names beginning with this string are dealt with by the following appenders -->
-        <!-- i.e. in our config, classes in package names beginnign org.solent -->
-        <Logger name="com.github.b4"  additivity="false" level="DEBUG">
+                <Logger name="com.github.b4"  additivity="false" level="DEBUG">
             <AppenderRef ref="Console"/>
             <!-- <AppenderRef ref="appLog"/> -->
         </Logger>

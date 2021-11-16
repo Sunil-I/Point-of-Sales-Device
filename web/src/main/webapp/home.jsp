@@ -1,95 +1,32 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
    request.setAttribute("selectedPage","home");
-   %>
-<%--import bank modules --%>
-<%@ page import="com.github.b4.bank.model.dto.CreditCard" %>
-<%@ page import="com.github.b4.bank.client.impl.BankRestClientImpl" %>
-<%@ page import="com.github.b4.bank.model.client.BankRestClient" %>
-<%@ page import="com.github.b4.bank.model.dto.BankTransactionStatus" %>
-<%@ page import="com.github.b4.bank.model.dto.TransactionReplyMessage" %>
+%>
 <%--import properties modules --%>
 <%@page import="com.github.b4.dao.WebObjectFactory"%>
 <%@page import="com.github.b4.dao.PropertiesDao"%>
 <%--import logging modules --%>
 <%@ page import="org.apache.logging.log4j.Logger" %>
 <%@ page import="org.apache.logging.log4j.LogManager" %>
-<% Logger log = LogManager.getLogger(this.getClass());%>
+<%-- import controller modules --%>
+<%@page import="com.github.b4.service.RestController"%>
+<%-- get properties--%>
 <%
    PropertiesDao propertiesDao = WebObjectFactory.getPropertiesDao();
-   String bankUrl = propertiesDao.getProperty("rest_url");
+   // get details of the recipient
    String recipient_name = propertiesDao.getProperty("recipient_name");
    String recipient_ccnumber = propertiesDao.getProperty("recipient_ccnumber");
    String recipient_issueNum = propertiesDao.getProperty("recipient_issueNum");
    String recipient_endDate = propertiesDao.getProperty("recipient_endDate");
    String recipient_cvv = propertiesDao.getProperty("recipient_cvv");
-   
-   %>
+ %>
+<%-- define backend things--%>
 <%
-   // start the clart
-   BankRestClient client = new BankRestClientImpl(bankUrl);
-   // define things
-   TransactionReplyMessage reply = null;
-   String action = null;
-   CreditCard cardFrom = null;
-   CreditCard cardTo = null;
-   // get action    
-   action = request.getParameter("action");
-   // get form details
-   String sender_ccnumber = request.getParameter("sender_ccnumber");
-   String sender_cvv = request.getParameter("sender_cvv");
-   String sender_endDate = request.getParameter("sender_endDate");
-   String sender_issueNum = request.getParameter("sender_issueNum");
-   String sender_name = request.getParameter("sender_name");
-   if ("transaction".equals(action)) {
-       //Card From
-       cardFrom = new CreditCard();
-       cardFrom.setCardnumber(sender_ccnumber);
-       cardFrom.setCvv(sender_cvv);
-       cardFrom.setEndDate(sender_endDate);
-       cardFrom.setIssueNumber(sender_issueNum); 
-       cardFrom.setName(sender_name);
-       //Card To
-       cardTo = new CreditCard();
-       cardTo.setCardnumber(recipient_ccnumber);
-       cardTo.setCvv(recipient_cvv);
-       cardTo.setEndDate(recipient_endDate);
-       cardTo.setIssueNumber(recipient_issueNum);
-       cardTo.setName(recipient_name);
-       
-       //Amount
-       double amount = Double.parseDouble(request.getParameter("amount").toString());
-       
-       reply = client.transferMoney(cardFrom, cardTo, amount);
-    } else if ("refund".equals(action)) {
-           //Card From
-       cardFrom = new CreditCard();
-       cardFrom.setCardnumber(sender_ccnumber);
-       cardFrom.setCvv(sender_cvv);
-       cardFrom.setEndDate(sender_endDate);
-       cardFrom.setIssueNumber(sender_issueNum); 
-       cardFrom.setName(sender_name);
-       //Card To
-       cardTo = new CreditCard();
-       cardTo.setCardnumber(recipient_ccnumber);
-       cardTo.setCvv(recipient_cvv);
-       cardTo.setEndDate(recipient_endDate);
-       cardTo.setIssueNumber(recipient_issueNum);
-       cardTo.setName(recipient_name);
-       
-       //Amount
-       double amount = Double.parseDouble(request.getParameter("amount").toString());
-       
-       reply = client.transferMoney(cardTo, cardFrom, amount);
-    } else if ("lunn".equals(action)) {
-       cardFrom = new CreditCard();
-       cardFrom.setCardnumber(sender_ccnumber);
-       cardFrom.setCvv(sender_cvv);
-       cardFrom.setEndDate(sender_endDate);
-       cardFrom.setIssueNumber(sender_issueNum); 
-       cardFrom.setName(sender_name);
+String reply = "";
+if ("POST".equals(request.getMethod())) {
+    reply = RestController.handleRequest(request);
     }
-   %>
+%>
 <jsp:include page="header.jsp" />
 <script src="./resources/js/numpad.js" defer></script>
 <main class="container">
@@ -202,15 +139,5 @@
          <button class="btn ml-2 rounded" type="submit">Send Details</button>
       </div>
    </form>
-   <% if (("transaction".equals(action))) {%>
-   <p>transaction sent</p>
-   <br>
-   <p><%=reply%> </p>
-   <% }%>
-   <% if (("refund".equals(action))) {%>
-   <p>refund sent</p>
-   <br>
-   <p><%=reply%> </p>
-   <% }%>
-</main>
+   <p><%=reply%></p>
 <jsp:include page="footer.jsp" />
