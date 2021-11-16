@@ -7,7 +7,7 @@ The developers and contributors involved in this project were:
 - [Liam Nicola](https://github.com/liamnicola)
 
 # Contents
-1
+
 
 # Using the app
 You will need to open the project with Netbeans and deploy the web module, you can access the project [here](http://localhost:8080/).
