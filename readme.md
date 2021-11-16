@@ -54,7 +54,7 @@ The application contains many basic aspects such as:
 # Use Cases*******
 
 # Contributions ********
-To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below
+To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as inteacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
 |-------------|--------------------|-------------|-----------------|
