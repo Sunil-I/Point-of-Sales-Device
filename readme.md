@@ -34,8 +34,18 @@ This system requirements for this program are:
 
 # Objectives
 The main goal of this application is for a user to enter and perform a transaction. 
-It allows users to enter card details such as a card number, expiry date, CVV.
-Moreover it also permits users to reverse a transaction as well as vlaidate the credit card
+It should allow users to enter card details such as a card number, expiry date, CVV.
+Moreover it should also permit users to reverse a transaction as well as vlaidate the credit card.
+besides this, it records all the sucessful and unsuccessful transactions.
+
+# Requirements 
+There are features required for this application to run in an efficent way, these features include:
+1) The applciation uses java technology for the back end
+2) The application uses javascript/css in the web client page.
+3) We are required to use a logging framework to help the debugging within our application
+4) All classes must be documented in Javadoc
+5) It should capture and log all internal exceptions
+6) Along with a meaningful error message for user generated exceptions
 
 # Project Diagrams
 
