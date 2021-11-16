@@ -7,6 +7,15 @@ The developers and contributors involved in this project were:
 - [Liam Nicola](https://github.com/liamnicola)
 
 # Contents
+[Using the app] (https://github.com/Sunil-I/COM528-AE1-B4/blob/master/readme.md#using-the-app)
+[Objectives] (https://github.com/Sunil-I/COM528-AE1-B4#objectives)
+[Requirements] (https://github.com/Sunil-I/COM528-AE1-B4#requirements)
+[Features] (https://github.com/Sunil-I/COM528-AE1-B4#features)
+[Use Cases] (https://github.com/Sunil-I/COM528-AE1-B4#use-cases-)
+[Contributions] (https://github.com/Sunil-I/COM528-AE1-B4#contributions)
+[Testing] (https://github.com/Sunil-I/COM528-AE1-B4#testing-)
+[Project Digrams] (https://github.com/Sunil-I/COM528-AE1-B4#project-diagrams-)
+
 
 
 # Using the app
@@ -25,7 +34,7 @@ git clone https://github.com/Sunil-I/COM528-AE1-B4
 2) Open the project in netbeans and find the web module
 3) Start the webserver
 4) Go to http://localhost:8080/ 
-### System Requirements
+## System Requirements
 The system requirements for this program are:
 - [Java JDK](https://www.oracle.com/java/technologies/downloads/#java8) version 11 or newer.
 - [Apache Maven](https://maven.apache.org/install.html) 3.8 or newer
