@@ -68,11 +68,12 @@ There are many requirements needed for this application to run in an efficent wa
 # Features
 The application contains many basic aspects such as:
 - A Pin Pad which allows the user to enter a reasonable number in the appropriate text box
-- Buttons which permits users to send, return or check credit card
+- This Application includes buttons which permits users to send, return or check credit card
+- We also added a properties page
 
 # Use Cases ******
 
-# Contributions
+# Contributions ******
 To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as inteacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
@@ -86,14 +87,14 @@ To start this project, all developers were split into different sections of the 
 
 # Project Diagrams ******
 
-__UML class diagram__
+##__UML class diagram__
 
 This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
 
 ![image](https://user-images.githubusercontent.com/71653944/141876925-81a8b8b8-0303-42ce-8c7e-ad82dce45d4a.png)
 
 
-__Robustness diagram__
+##__Robustness diagram__
 
 the Robusteness diagram shown below represnts a use case behaviour, showing participating
 classes and software behaviour. This diagram shows that a user will insert details in a card reader provided
