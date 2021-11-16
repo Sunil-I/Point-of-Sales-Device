@@ -71,7 +71,8 @@ __UML class diagram__
 
 This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
 
-**insert diagram**
+![image](https://user-images.githubusercontent.com/71653944/141876925-81a8b8b8-0303-42ce-8c7e-ad82dce45d4a.png)
+
 
 __Robustness diagram__
 
