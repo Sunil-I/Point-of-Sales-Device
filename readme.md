@@ -7,21 +7,23 @@ The developers and contributors involved in this project were:
 - [Liam Nicola](https://github.com/liamnicola)
 
 # Contents
-[Using the app](https://github.com/Sunil-I/COM528-AE1-B4/blob/master/readme.md#using-the-app)
+1) [Using the app](https://github.com/Sunil-I/COM528-AE1-B4/blob/master/readme.md#using-the-app)
+    - [How to set up](https://github.com/Sunil-I/COM528-AE1-B4#how-to-setup)
+    - [System Requirements](https://github.com/Sunil-I/COM528-AE1-B4#system-requirements)
 
-[Objectives](https://github.com/Sunil-I/COM528-AE1-B4#objectives)
+2) [Objectives](https://github.com/Sunil-I/COM528-AE1-B4#objectives)
 
-[Requirements](https://github.com/Sunil-I/COM528-AE1-B4#requirements)
+3) [Requirements](https://github.com/Sunil-I/COM528-AE1-B4#requirements)
 
-[Features](https://github.com/Sunil-I/COM528-AE1-B4#features)
+4) [Features](https://github.com/Sunil-I/COM528-AE1-B4#features)
 
-[Use Cases](https://github.com/Sunil-I/COM528-AE1-B4#use-cases-)
+5) [Use Cases](https://github.com/Sunil-I/COM528-AE1-B4#use-cases-)
 
-[Contributions](https://github.com/Sunil-I/COM528-AE1-B4#contributions)
+6) [Contributions](https://github.com/Sunil-I/COM528-AE1-B4#contributions)
 
-[Testing](https://github.com/Sunil-I/COM528-AE1-B4#testing-)
+7) [Testing](https://github.com/Sunil-I/COM528-AE1-B4#testing-)
 
-[Project Digrams](https://github.com/Sunil-I/COM528-AE1-B4#project-diagrams-)
+8) [Project Digrams](https://github.com/Sunil-I/COM528-AE1-B4#project-diagrams-)
 
 
 
