@@ -3,7 +3,25 @@ type: docker
 name: default
 
 steps:
-  - name: verify
+  - name: web tests
     image: adoptopenjdk/maven-openjdk11
     commands:
-      - mvn --batch-mode --update-snapshots verify
+       - mvn test -Dtest=PropertiesDaoTest -DfailIfNoTests=false --no-transfer-progress
+       - mvn test -Dtest=WebObjectFactoryTest -DfailIfNoTests=false
+  - name: client tests
+    image: adoptopenjdk/maven-openjdk11
+    commands:
+       - mvn test -Dtest=BankClientTest -DfailIfNoTests=false --no-transfer-progress
+       - mvn test -Dtest=JsonDtoTests -DfailIfNoTests=false
+       - mvn test -Dtest=PasswordUtilsTest -DfailIfNoTests=false
+  - name: creditcard checker tests
+    image: adoptopenjdk/maven-openjdk11
+    commands:
+       - mvn test -Dtest=CheckCalculateLunnTest -DfailIfNoTests=false --no-transfer-progress
+       - mvn test -Dtest=TestRegexCardValidator -DfailIfNoTests=false
+       - mvn test -Dtest=CheckCalculateLunnTest -DfailIfNoTests=false
+       - mvn test -Dtest=TestRegexCardValidator -DfailIfNoTests=false
+  - name: general tests
+    image: adoptopenjdk/maven-openjdk11
+    commands:
+       - mvn --batch-mode --update-snapshots --no-transfer-progress -DskipTests=true verify
