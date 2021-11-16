@@ -6,13 +6,10 @@ The developers and contributors involved in this project were:
 - [Kacper Stepniewski](https://github.com/eltonczlon123)
 - [Liam Nicola](https://github.com/liamnicola)
 
-
-The application was built using Java EE technologies with a Multi-Module Maven Project Structure. It uses Java Server Pages and Javascript to extend the functionality of the html elements.
-
 # Using the app
-You will need to open the project with Netbeans and deploy the web module, the web app default access point [here](http://localhost:8080/).
+You will need to open the project with Netbeans and deploy the web module, you can access the project [here](http://localhost:8080/).
 
-The NumPad uses the number buttons to input a number in the selected text field, you will need to use the "select" button to choose which input the numpad will use. 
+The PinPad uses the number buttons to input a number in the selected text field, you will need to use the "select" button to choose which input the numpad will use. 
 `Clear` - Clears the input label
 `Back` - Removes the last digit in the input label
 
@@ -26,7 +23,7 @@ git clone https://github.com/Sunil-I/COM528-AE1-B4
 3) Start the webserver
 4) Go to http://localhost:8080/ 
 ### System Requirements
-This system requirements for this program are:
+The system requirements for this program are:
 - [Java JDK](https://www.oracle.com/java/technologies/downloads/#java8) version 11 or newer.
 - [Apache Maven](https://maven.apache.org/install.html) 3.8 or newer
 - [Tomcat 9](https://tomcat.apache.org/download-90.cgi)
@@ -47,23 +44,23 @@ There are many requirements needed for this application to run in an efficent wa
 5) It should capture and log all internal exceptions
 6) Along with a meaningful error message for user generated exceptions
 
-# Features********
+# Features
 The application contains many basic aspects such as:
 - A Pin Pad which allows the user to enter a reasonable number in the appropriate text box
 
-# Use Cases*******
+# Use Cases
 
-# Contributions ********
+# Contributions
 To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as inteacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
 |-------------|--------------------|-------------|-----------------|
-| Git | UML Class Diagram  |Robustness Diagram|   Use Cases     |
-|-------------|--------------------| Html/css |Features defintion|
-|-------------|--------------------|-------------| Html/css|
+| Github | UML Class Diagram  |Robustness Diagram|   Use Cases     |
+|Testing|--------------------| Html/css |Features defintion|
+|Refactoring Code|--------------------|-------------| Html/css|
 
 
-# Testing**************
+# Testing
 
 # Project Diagrams
 
