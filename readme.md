@@ -47,6 +47,20 @@ There are features required for this application to run in an efficent way, thes
 5) It should capture and log all internal exceptions
 6) Along with a meaningful error message for user generated exceptions
 
+# Use Cases*******
+
+# Contributions
+To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below
+
+| Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
+|-------------|--------------------|-------------|-----------------|
+| Git | UML Class Diagram  |Robustness Diagram|   Use Cases     |
+|-------------|--------------------| Html/css |Features defintion|
+|-------------|--------------------|-------------| Html/css|
+
+
+# Testing**************
+
 # Project Diagrams
 
 __UML class diagram__
