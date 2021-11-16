@@ -6,6 +6,9 @@ The developers and contributors involved in this project were:
 - [Kacper Stepniewski](https://github.com/eltonczlon123)
 - [Liam Nicola](https://github.com/liamnicola)
 
+# Contents
+1
+
 # Using the app
 You will need to open the project with Netbeans and deploy the web module, you can access the project [here](http://localhost:8080/).
 
@@ -47,6 +50,7 @@ There are many requirements needed for this application to run in an efficent wa
 # Features
 The application contains many basic aspects such as:
 - A Pin Pad which allows the user to enter a reasonable number in the appropriate text box
+- Buttons which permits users to send, return or check credit card
 
 # Use Cases ******
 
