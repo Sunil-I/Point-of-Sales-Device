@@ -7,10 +7,12 @@ import com.github.b4.bank.model.dto.BankTransactionStatus;
 import com.github.b4.bank.model.dto.TransactionReplyMessage;
 import com.github.b4.dao.PropertiesDao;
 import com.github.b4.dao.WebObjectFactory;
+import com.github.b4.cardcheck.CalculateLunnDigit;
+import com.github.b4.cardcheck.CardValidationResult;
+import com.github.b4.cardcheck.RegexCardValidator;
 import javax.servlet.http.HttpServletRequest;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-
 /**
  *
  * @author Sunil Islam
@@ -30,11 +32,14 @@ public class RestController {
 
 
     public static TransactionReplyMessage handleRefund(CreditCard cardTo, CreditCard cardFrom, double amount) {
-        log.debug("Refund action was called.");    
+        log.debug("Refund action was called.");
         return client.transferMoney(cardTo, cardFrom, amount);
     }
     public static String handleLunnCode(CreditCard cardTo) {
-        return "WIP";
+        log.debug("Check Credit Card action was called.");
+        return RegexCardValidator.isValid(cardTo.getCardnumber()).getMessage();
+        
+        
     }
 
 
