@@ -48,7 +48,7 @@ There are many requirements needed for this application to run in an efficent wa
 The application contains many basic aspects such as:
 - A Pin Pad which allows the user to enter a reasonable number in the appropriate text box
 
-# Use Cases
+# Use Cases ******
 
 # Contributions
 To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as inteacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
@@ -60,9 +60,9 @@ To start this project, all developers were split into different sections of the 
 |Refactoring Code|--------------------|-------------| Html/css|
 
 
-# Testing
+# Testing *******
 
-# Project Diagrams
+# Project Diagrams ******
 
 __UML class diagram__
 
