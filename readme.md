@@ -49,7 +49,7 @@ There are features required for this application to run in an efficent way, thes
 
 # Use Cases*******
 
-# Contributions
+# Contributions ********
 To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
@@ -72,7 +72,8 @@ This Class diagram describes the attributes and operations of a class and also t
 __Robustness diagram__
 
 the Robusteness diagram shown below represnts a use case behaviour, showing participating
-classes and software behaviour.
+classes and software behaviour. This diagram shows that a user will insert details in a card reader provided
+in the application. Then the user should enter their card number in order to get in contact with the bank client
 
 ![image](https://user-images.githubusercontent.com/71653944/141869418-7ab1f139-c016-470c-8767-3757bbf069f8.png)
 
