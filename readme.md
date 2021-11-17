@@ -107,7 +107,7 @@ To start this project, all developers were split into different sections of the 
 |-------------|--------------------|-------------|-----------------|
 | Github | UML Class Diagram  |Robustness Diagram|   Use Cases     |
 |Testing| Design Application| Html/css |Features defintion|
-|Refactoring Code|           |          | Html/css|
+|Refactoring Code|           | Wireframes    | Html/css|
 
 
 # Testing
