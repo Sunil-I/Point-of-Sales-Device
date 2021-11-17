@@ -120,11 +120,14 @@ Build Status:
 Test Plan can be found [here](./documentation/tests.md).
 # Project Diagrams
 
+## Wireframes
+
 ## UML class diagram
 
-This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system.
+This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system. All  The user inputs details and the attributes is as follows card number, cvv, end date, issue number, set name. The credit card details are then sent over to the sender. You also have card from which stores details from the recipient.
+all the objects are stored on the RestController 
 
-![image](https://i.imgur.com/UuSilWa.png)
+![uml class diagram drawio](https://user-images.githubusercontent.com/71653944/142227560-061eb687-ed0d-4bb7-9041-8701055ebf38.png)
 
 
 ## Robustness diagram
