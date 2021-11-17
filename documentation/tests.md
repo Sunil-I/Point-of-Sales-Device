@@ -9,3 +9,5 @@
 | TC6     | User submits a refund request and does have the funds to over this request. | The transaction passes with the user being notified.                       | Passed |
 | TC7     | User submits a Invalid credit card number for the Lunn code check | The action fails with the user being notified of what went wrong.                       | Passed |
 | TC8     | User submits a valid credit card number for the Lunn code check | The action passes with the user being notified of the card type.                       | Passed |
+| TC9     | User uses pinpad buttons | The button pressed will input the value into the currently selected input.          | Passed |
+| TC10     | User uses select button. | The button pressed will change the input used when using the pinpad. | Passed |

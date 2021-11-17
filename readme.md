@@ -132,9 +132,7 @@ all the objects are stored on the RestController
 
 ## Robustness diagram
 
-the Robusteness diagram shown below represnts a use case behaviour, showing participating
-classes and software behaviour. This diagram shows that a user will insert details in a card reader provided
-in the application. Then the user should enter their card number in order to get in contact with the bank client
+The robusteness diagram below depicts how the user will interact with the website through an interface, which will process the user input and determine if the values are valid. If the inputs are valid, they will be stored in the domain. This diagram is used to show the main interactions between both user and domain and how they are connected.
 
-![image](https://i.imgur.com/gD64FsL.png)
+![Robustness Diagram drawio](https://user-images.githubusercontent.com/72071568/142230780-9a49422c-bd86-4a17-9270-ebf396227c2a.png)
 
