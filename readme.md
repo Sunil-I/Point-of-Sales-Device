@@ -122,12 +122,26 @@ Test Plan can be found [here](./documentation/tests.md).
 
 ## Wireframes
 
+To ensure that the webpage design was user friendly and aesthetically pleasing we created plans on how we wanted parts of our web page to look. Below you can see how we created these designs to follow, which made it easier to create the webpage. 
+
+Pinpad:
+
+![Pinpad design drawio](https://user-images.githubusercontent.com/72071568/142240331-175a5343-3d91-4189-a3b3-407a4c93e70d.png)
+
 ## UML class diagram
 
-This Class diagram describes the attributes and operations of a class and also the constraints imposed on the system. All  The user inputs details and the attributes is as follows card number, cvv, end date, issue number, set name. The credit card details are then sent over to the sender. You also have card from which stores details from the recipient.
-all the objects are stored on the RestController 
+Upon entering the website, the user is greeted with a home page where the main contents
+are. The diagram shows the breakdown of relationship between all the classes and functions
+in the application system. The CreditCard information is stored in the "RestController" object,
+which includes input from the "cardTo:CreditCard", that is essential for the card details to be
+successfully stored and sent. The input is then being validated and processed by the "RestController",
+the "BankRestClientImpl" object is oriented around sending the money, if the card inputs are correct,
+the "BankTransactionStatus" will be triggered and make a boolean, it will decide whether it turnt out
+to be a success or a fail, any of those will also trigger the "TransactionReplyMessage" which is
+responsible for handling the transaction message, which will notify the user whether it was a
+success or fail.  
 
-![uml class diagram drawio](https://user-images.githubusercontent.com/71653944/142227560-061eb687-ed0d-4bb7-9041-8701055ebf38.png)
+![XDDDD](https://user-images.githubusercontent.com/72078173/142241639-238aeeea-9328-4015-b10f-0a349168464f.png)
 
 
 ## Robustness diagram
