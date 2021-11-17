@@ -95,7 +95,7 @@ There are many cases in which a user or admin can use this application for examp
 
 |Admin | Action | Response|
 |------|--------|---------|
-| Step 1 | Admin tries to configure | Admin eneters correct details and can configure the properties|
+| Step 1 | Admin tries to configure | Admin enters correct details and can configure the properties|
 | Step 2 | Admin views transactions of user | All transactions are viewed using a LogRecord |
 | Step 3 | Admin enters application | When the admin enteres the application, it will recognise the details |
 
