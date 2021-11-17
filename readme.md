@@ -26,6 +26,7 @@ The developers and contributors involved in this project were:
 7) [Testing](#testing)
 
 8) [Project Digrams](#project-diagrams)
+    - [Wireframes](#wireframes)
     - [UML Class diagram](#uml-class-diagram)
     - [Robustness diagram](#robustness-diagram)
 
@@ -59,7 +60,7 @@ The system requirements for this program are:
 
 # Objectives
 The main goal of this application is for a user to enter and perform a transaction. 
-It should allow users to enter card details such as a card number, expiry date, CVV.
+It should allow users to enter card details such as a card number, expiry date, CVV, etc.
 Moreover it should also permit users to reverse a transaction as well as vlaidate the credit card.
 besides this, it records all the sucessful and unsuccessful transactions.
 
@@ -76,20 +77,22 @@ There are many requirements needed for this application to run in an efficent wa
 The application contains many basic aspects such as:
 - A Pin Pad which allows the user to enter a reasonable number in the appropriate text box
 - This Application includes buttons which permits users to send, return or check credit card
-- We also added a properties page
+- It includes a credit card algorithm validator 
+- A contact page which includes a form to keep in touch with users
+- We also added a properties page to allow the admin to view all the valid and invalid tranactions
 
 # Use Cases 
-There are many cases in which a user or admin can use this application for example:
+There are many cases in which a user or admin can use this application, for example:
 
 ## User point of view
 
 | User | Action | Response|
 |------|--------|---------|
-| Step 1 | User enteres application URL in search engine | redirects user to home page | 
-| Step 2 | User selects if they want to send, refund or check credit card| using statements, which allows application to change to the appropriate request |
-| Step 3 | User enteres the correct card information | application checks if the credit card details are correct and vlaidates it using the luhn algorithm
+| Step 1 | User enteres application URL in search engine | Redirects user to home page | 
+| Step 2 | User selects if they want to send, refund or check credit card| Using statements, which allows application to change to the appropriate request |
+| Step 3 | User enteres the correct card information | Application checks if the credit card details are correct and vlaidates it using the luhn algorithm
 | Step 4 | If user fails to enter card details | An error message is shown letting user know details must be entered|
-| Step 5 | If user enters the wrong details | an error message is shown to correct the details |
+| Step 5 | If user enters the wrong details | An error message is shown to correct the details |
 
 ## Admin point of view
 
@@ -101,7 +104,7 @@ There are many cases in which a user or admin can use this application for examp
 
 
 # Contributions 
-To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as inteacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
+To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as interacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
 |-------------|--------------------|-------------|-----------------|
@@ -128,6 +131,20 @@ Pinpad:
 
 ![Pinpad design drawio](https://user-images.githubusercontent.com/72071568/142240331-175a5343-3d91-4189-a3b3-407a4c93e70d.png)
 
+Home page/Sender details:
+
+![Home page drawio (1)](https://user-images.githubusercontent.com/72071568/142244456-66489ad5-7933-48f2-bcfc-6dbfd2e0b9fe.png)
+
+Contact page:
+
+![Contact drawio](https://user-images.githubusercontent.com/72071568/142272189-eb0cdaa7-58f7-4736-8cde-ea30bc6c7588.png)
+
+Properties page:
+
+![Properties drawio](https://user-images.githubusercontent.com/72071568/142275190-3ac7a570-d429-4c52-8411-4c58e3a79f42.png)
+
+Our finished webpages heavily resembles these designs as they were referred back to many times throughout the creation of the website to ensure that the design remained consistent.
+
 ## UML class diagram
 
 Upon entering the website, the user is greeted with a home page where the main contents
@@ -136,7 +153,7 @@ in the application system. The CreditCard information is stored in the "RestCont
 which includes input from the "cardTo:CreditCard", that is essential for the card details to be
 successfully stored and sent. The input is then being validated and processed by the "RestController",
 the "BankRestClientImpl" object is oriented around sending the money, if the card inputs are correct,
-the "BankTransactionStatus" will be triggered and make a boolean, it will decide whether it turnt out
+the "BankTransactionStatus" will be triggered and make a boolean, it will decide whether it turns out
 to be a success or a fail, any of those will also trigger the "TransactionReplyMessage" which is
 responsible for handling the transaction message, which will notify the user whether it was a
 success or fail.  
