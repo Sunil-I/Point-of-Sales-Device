@@ -14,14 +14,15 @@ steps:
        - mvn test -Dtest=BankClientTest -DfailIfNoTests=false --no-transfer-progress
        - mvn test -Dtest=JsonDtoTests -DfailIfNoTests=false
        - mvn test -Dtest=PasswordUtilsTest -DfailIfNoTests=false
-  - name: creditcard checker tests
+  - name: credit card checker tests
     image: adoptopenjdk/maven-openjdk11
     commands:
        - mvn test -Dtest=CheckCalculateLunnTest -DfailIfNoTests=false --no-transfer-progress
        - mvn test -Dtest=TestRegexCardValidator -DfailIfNoTests=false
        - mvn test -Dtest=CheckCalculateLunnTest -DfailIfNoTests=false
        - mvn test -Dtest=TestRegexCardValidator -DfailIfNoTests=false
-  - name: general tests
+  - name: general maven tests
     image: adoptopenjdk/maven-openjdk11
     commands:
        - mvn --batch-mode --update-snapshots --no-transfer-progress -DskipTests=true verify
+       - mvn -DskipTests=true clean install
