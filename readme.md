@@ -62,7 +62,7 @@ The system requirements for this program are:
 The main goal of this application is for a user to enter and perform a transaction. 
 It should allow users to enter card details such as a card number, expiry date, CVV, etc.
 Moreover it should also permit users to reverse a transaction as well as vlaidate the credit card.
-besides this, it records all the sucessful and unsuccessful transactions.
+besides this, it records all the successful and unsuccessful transactions.
 
 # Requirements 
 There are many requirements needed for this application to run in an efficent way, these features include:
@@ -104,7 +104,7 @@ There are many cases in which a user or admin can use this application, for exam
 
 
 # Contributions 
-To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as interacted with eachother in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
+To start this project, all developers were split into different sections of the web interface in order to design and develop an adequate and running application as shown below. We communicated on several calls and messages as well as interacted with each other in class hours to catch up and guide eachother on improvements or deteriorations in the web application.
 
 | Sunil Islam | Kacper Stepniewski | Liam Nicola | Kayleigh Perera |
 |-------------|--------------------|-------------|-----------------|
@@ -163,7 +163,7 @@ success or fail.
 
 ## Robustness diagram
 
-The robusteness diagram below depicts how the user will interact with the website through an interface, which will process the user input and determine if the values are valid. If the inputs are valid, they will be stored in the domain. This diagram is used to show the main interactions between both user and domain and how they are connected.
+The robustness diagram below depicts how the user will interact with the website through an interface, which will process the user input and determine if the values are valid. If the inputs are valid, they will be stored in the domain. This diagram is used to show the main interactions between both user and domain and how they are connected.
 
 ![Robustness Diagram drawio](https://user-images.githubusercontent.com/72071568/142230780-9a49422c-bd86-4a17-9270-ebf396227c2a.png)
 
