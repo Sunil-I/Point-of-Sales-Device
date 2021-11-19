@@ -25,16 +25,16 @@
    recipient_name = request.getParameter("recipient_name");
    // recipient_ccnumber
    propertiesDao.setProperty("recipient_ccnumber", request.getParameter("recipient_ccnumber"));
-   rest_url = request.getParameter("recipient_ccnumber");
+   recipient_ccnumber = request.getParameter("recipient_ccnumber");
    //recipient_issueNum
    propertiesDao.setProperty("recipient_issueNum", request.getParameter("recipient_issueNum"));
-   rest_url = request.getParameter("recipient_issueNum");
+   recipient_issueNum = request.getParameter("recipient_issueNum");
    // recipient_endDate
    propertiesDao.setProperty("recipient_endDate", request.getParameter("recipient_endDate"));
-   rest_url = request.getParameter("recipient_endDate");
+   recipient_endDate = request.getParameter("recipient_endDate");
    // 
    propertiesDao.setProperty("recipient_cvv", request.getParameter("recipient_cvv"));
-   rest_url = request.getParameter("recipient_cvv");   
+   recipient_cvv = request.getParameter("recipient_cvv");   
    
    }
    %>
